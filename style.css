@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    padding: 10rem 4rem;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.left-sec {
+    width: 40%;
+}
+
+.right-sec {
+    width: 60%;
+}
+
+.left-sec h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.green {
+    background-color: rgb(51, 218, 51);
+    padding: .5rem;
+    font-weight: 400;
+}
+
+.right-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.right-row h2 {
+    font-size: 3rem;
+    font-family: 400;
+}
+
+button {
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 1px solid rgb(51, 218, 51);
+    background-color: transparent;
+    color: rgb(51, 218, 51);
+}
+
+.para {
+    font-style: italic;
+    font-weight: 200;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+
+    section {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .left-sec {
+        width: 100%;
+    }
+
+    .right-sec {
+        width: 100%;
+    }
+
+
+
+    .green {
+        margin: 2rem 0;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    section {
+        padding: 10rem 2rem;
+    }
+
+    .right-row h2 {
+        font-size: 2.7rem;
+    }
+
+    .left-sec h1 {
+        font-size: 2.9rem;
+    }
+}
